@@ -19,7 +19,6 @@ services:
       - "9090:9090"
     volumes:
       - ./deployment/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      # NOUVEAU : Montage du dossier des règles d'alerte
       - ./deployment/prometheus/rules:/etc/prometheus/rules
       - prometheus_data:/prometheus
     command:

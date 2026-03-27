@@ -1,6 +1,6 @@
 global:
   scrape_interval: 15s # Fréquence à laquelle Prometheus va scraper les métriques
-  evaluation_interval: 15s # Fréquence à laquelle les règles d'evaluation_interval: 15s
+  evaluation_interval: 15s # Fréquence à laquelle les règles d'alerte sont évaluées
 
 # Indique à Prometheus où trouver les fichiers de règles d'alerte
 rule_files:
