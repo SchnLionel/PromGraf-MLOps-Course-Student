@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s # Fréquence à laquelle Prometheus va scraper les métriques
+  evaluation_interval: 15s # Fréquence à laquelle les règles d'alerte sont évaluées
+
+scrape_configs:
+  - job_name: 'prometheus' # Nom du job pour Prometheus lui-même
+    static_configs:
+      - targets: ['localhost:9090'] # Prometheus se monitorera lui-même
